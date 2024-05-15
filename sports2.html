@@ -1,0 +1,339 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local News</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="0d52ee44-10f0-411f-b04b-bf5f036120aa";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').carousel();
+        });
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script></script>
+    <style>
+        .navbar{
+            padding: 8px;
+            padding-left: 20px;
+            z-index: 100;
+        }
+        .bgwhite{
+            background-color: white;
+        }
+        .breadcrumb{
+            position: fixed;
+            background-color: #f1f1f1;
+            width: 100%;
+            top: 92px;
+            border-bottom: 1px solid rgb(192, 190, 190);
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 90;
+            padding-left: 54px;
+        }
+        .firstcontainer{
+            padding-top: 100px;
+        }
+        .mainimg{
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            object-position: center;
+        }
+        body {
+            padding-top: 70px; 
+        }
+        .breaking-news {
+            background: #ff0000;
+            color: white;
+            padding: 0px 0;
+            margin-top: 62px;
+        }
+        .breaking-news marquee {
+            font-weight: bold;
+        }
+        .news-section {
+            padding: 30px 0;
+        }
+        .news-card {
+            margin-bottom: 20px;
+        }
+        .advertisement {
+            background: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .footer {
+            background: #FFFBF5;
+            color: black;
+            padding: 20px 0;
+            margin-top: 30px; 
+            text-decoration: none;
+        }
+        .list-widget {
+            list-style: none;
+            padding: 0;
+        }
+        .list-widget li {
+            background: #f8f9fa;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .time-widget,
+        .poll-widget,
+        .newsletter-widget {
+            margin-bottom: 30px;
+        }
+        .navbar-brand > img{
+            height: 60px;
+            padding: 8px;
+        }
+        .margin-nav{
+            margin-top: 10px;
+            margin-left: 12px;
+        }
+        .bgnav{
+            background-color: #FFFBF5;
+        }
+        .end{
+            text-align: end;
+        }
+    </style>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bgnav">
+        <div class="container-fluid margin-nav">
+          <a class="navbar-brand" href="mainpage.html">
+            <img src="Images/Logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse bgpurp text-end end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Local News
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">News Local</a></li>
+                  <li><a class="dropdown-item" href="#">Incidents</a></li>
+                  <li><a class="dropdown-item" href="#">Flash Reports</a></li>
+                  <li><a class="dropdown-item" href="#">Current News</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Weather
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Current Weather</a></li>
+                  <li><a class="dropdown-item" href="#">El Nino Effect and Updates</a></li>
+                  <li><a class="dropdown-item" href="#">Pag-Asa</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Showbiz
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Movies</a></li>
+                  <li><a class="dropdown-item" href="#">Music</a></li>
+                  <li><a class="dropdown-item" href="#">Social Media</a></li>
+                  <li><a class="dropdown-item" href="#">Coming Soon!</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sports
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Basketball</a></li>
+                  <li><a class="dropdown-item" href="#">Volleyball</a></li>
+                  <li><a class="dropdown-item" href="#">Olympics</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">References</a>
+              </li>          
+            </ul>
+          </div>          
+        </div>
+    </nav>
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb py-2">
+            <li class="breadcrumb-item active">Home</li>
+            <li class="breadcrumb-item active"><b>Local News</b></li>
+        </ol>
+    </nav>
+
+    <div class="container-fluid firstcontainer px-5">
+        <div class="container-fluid">
+            <p class="fs-1"><strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia nulla totam recusandae!</strong></p>
+        </div>
+        <div class="row">
+            <div class="col-9">
+                <div class="d-flex mb-3 justify-content-center align-items-center">
+                    <div class="p-2">
+                        <img src="Images/placeholderimg.png" alt="" style="border-radius: 50%; height: 50px; width: 50px;">
+                    </div>
+                    <div class="me-auto p-2">John Doe</div>
+                    <div class="p-2"><a href="#">O</a></div>
+                    <div class="p-2"><a href="#">O</a></div>
+                    <div class="p-2"><a href="#">O</a></div>
+                  </div>                  
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-9" style="border-right: 1px solid rgb(194, 194, 194);">
+                <img src="Images/placeholderimg.png" class="mainimg mb-5">
+                <p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat maiores soluta saepe odio unde molestiae doloremque, ab repellendus dolorum sequi dolorem. Explicabo debitis quibusdam perferendis libero maiores ipsum aliquam quae cupiditate tempore voluptates architecto, a molestiae inventore magni dolorem earum dignissimos, cum voluptas nesciunt. Qui expedita dolor nam a tempore aspernatur, laboriosam assumenda debitis temporibus pariatur cupiditate eligendi, ipsum magnam veritatis. Accusantium error voluptates facilis illum nobis id omnis? Nostrum inventore cum unde? Eaque consectetur recusandae, nisi hic nemo qui amet illo quisquam, veniam, vel alias. Aspernatur odit nulla omnis dignissimos nihil officia asperiores, id laudantium? Facere voluptatum aspernatur magnam.</p>
+                <p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat maiores soluta saepe odio unde molestiae doloremque, ab repellendus dolorum sequi dolorem. Explicabo debitis quibusdam perferendis libero maiores ipsum aliquam quae cupiditate tempore voluptates architecto, a molestiae inventore magni dolorem earum dignissimos, cum voluptas nesciunt. Qui expedita dolor nam a tempore aspernatur, laboriosam assumenda debitis temporibus pariatur cupiditate eligendi, ipsum magnam veritatis. Accusantium error voluptates facilis illum nobis id omnis? Nostrum inventore cum unde? Eaque consectetur recusandae, nisi hic nemo qui amet illo quisquam, veniam, vel alias. Aspernatur odit nulla omnis dignissimos nihil officia asperiores, id laudantium? Facere voluptatum aspernatur magnam.</p>
+            </div>
+            <div class="col-3">
+                <p class="fs-2"><strong>Trending</strong></p>
+                <div class="p-2">
+                    <p class="fs-6">
+                        <a href="#">
+                            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit perspiciatis iste aperiam.</strong>
+                        </a>
+                    </p>
+                </div>
+                <div class="p-2">
+                    <p class="fs-6">
+                        <a href="#">
+                            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit perspiciatis iste aperiam.</strong>
+                        </a>
+                    </p>
+                </div>
+                <div class="p-2">
+                    <p class="fs-6">
+                        <a href="#">
+                            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit perspiciatis iste aperiam.</strong>
+                        </a>
+                    </p>
+                </div>
+                <div class="p-2">
+                    <p class="fs-6">
+                        <a href="#">
+                            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit perspiciatis iste aperiam.</strong>
+                        </a>
+                    </p>
+                </div>
+                <div class="p-2">
+                    <p class="fs-6">
+                        <a href="#">
+                            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit perspiciatis iste aperiam.</strong>
+                        </a>
+                    </p>
+                </div>
+                <div class="p-2">
+                    <p class="fs-6">
+                        <a href="#">
+                            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit perspiciatis iste aperiam.</strong>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3">
+                  <h5>NAVIGATION</h5>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li>
+                      <a href="#">Local News</a>
+                      <ul>
+                        <li><a href="#">News Local</a></li>
+                        <li><a href="#">Incidents</a></li>
+                        <li><a href="#">Flash Reports</a></li>
+                        <li><a href="#">Current Events</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Weather</a>
+                      <ul>
+                        <li><a href="#">Current Weather</a></li>
+                        <li><a href="#">El Nino Effect</a></li>
+                        <li><a href="#">PAG-ASA</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Entertainment</a>
+                      <ul>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">Music</a></li>
+                        <li><a href="#">Social Media</a></li>
+                        <li><a href="#">Coming Soon!</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Sports</a>
+                      <ul>
+                        <li><a href="#">Basketball</a></li>
+                        <li><a href="#">Volleyball</a></li>
+                        <li><a href="#">Olympics</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">References</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <h5>SOCIAL MEDIA</h5>
+                  <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <h5>ABOUT US</h5>
+                  <ul>
+                    <li><a href="#">The organization</a></li>
+                    <li><a href="#">The workers</a></li>
+                    <li><a href="#">The developers</a></li>
+                    <li><a href="#">Our Philanthropy</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <h5>MODAL</h5>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Launch modal
+                  </button>
+          
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          Hi
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+
+
+
+    <script src="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
