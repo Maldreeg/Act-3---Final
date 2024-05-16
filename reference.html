@@ -1,0 +1,426 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>References</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="0d52ee44-10f0-411f-b04b-bf5f036120aa";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <style>
+        .navbar{
+            height: 60px;
+            --bs-navbar-padding-x: 10px;
+        }
+        .bgwhite{
+            background-color: white;
+        }
+        .breadcrumb{
+            position: fixed;
+            background-color: white;
+            width: 100%;
+            top: 60px;
+            border-bottom: 1px solid rgb(192, 190, 190);
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            --bs-breadcrumb-padding-x: 20px;
+            z-index: 1000;
+        }
+        .firstcontainer{
+            padding-top: 100px;
+        }
+        .mainimg{
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            object-position: center;
+        }
+        .accordion{
+            color: white;
+            --bs-accordion-btn-bg: white;
+            --bs-accordion-active-bg: rgb(146, 51, 255);;
+            --bs-accordion-btn-color: black;
+            --bs-accordion-active-color: white;
+            --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='black'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+            --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        }
+        .accordion-button:not(.collapsed){
+            box-shadow: none;
+        }
+        .grow-on-hover {
+            transition: transform 0.3s ease;
+        }
+        .grow-on-hover:hover {
+            transform: scale(1.1);
+        }
+        .navbar-brand > img{
+            height: 100px;
+        }
+        .navbar-brand > img{
+            height: 70px;
+            width: 155px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bgwhite">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="Images/Logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse bgwhite" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Local News
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">News Local</a></li>
+                      <li><a class="dropdown-item" href="#">Incidents</a></li>
+                      <li><a class="dropdown-item" href="#">Flash Reports</a></li>
+                      <li><a class="dropdown-item" href="#">Current News</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Weather
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="weatherpage.html">Current Weather</a></li>
+                      <li><a class="dropdown-item" href="weatherpage.html#weathermap">El Nino Effect and Updates</a></li>
+                      <li><a class="dropdown-item" href="weatherpage.html#pagasa_section">Pag-Asa</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Showbiz
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Pop Culture</a></li>
+                      <li><a class="dropdown-item" href="#">Trends</a></li>
+                      <li><a class="dropdown-item" href="#">Controversies</a></li>
+                      <li><a class="dropdown-item" href="#">Coming Soon!</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sports
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">PBA</a></li>
+                      <li><a class="dropdown-item" href="#">UAAP</a></li>
+                      <li><a class="dropdown-item" href="#">Olympics</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="reference.html" style="color:rgb(146, 51, 255); border-bottom: 2px solid  rgb(146, 51, 255);">References</a>
+                </li>          
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb pb-2 px-5">
+            <li class="breadcrumb-item bclink"><a href="index.html" style="text-decoration: none;">Home</a></li>
+            <li class="breadcrumb-item bclink active">References</li>
+        </ol>
+    </nav>
+    
+    <div class="container-fluid firstcontainer px-5">
+        <div class="row">
+            <div class="col-xl-9 col-12" style="border-right: 1px solid rgb(194, 194, 194);">
+                <p class="fs-3"><strong>Local News</strong></p>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          ENsured Quality
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            SOSA: State of the Student Address
+                          </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+
+                          </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            ENspacion
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+
+                          </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            EN Student Center
+                          </button>
+                        </h2>
+                        <div id="flush-collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <p class="fs-3"><strong>Weather Forecast</strong>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne2" aria-expanded="false" aria-controls="flush-collapseOne">
+                              ENsured Quality
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+    
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo2" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                SOSA: State of the Student Address
+                              </button>
+                            </h2>
+                            <div id="flush-collapseTwo2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+    
+                              </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree2" aria-expanded="false" aria-controls="flush-collapseThree">
+                                ENspacion
+                              </button>
+                            </h2>
+                            <div id="flush-collapseThree2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+    
+                              </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour2" aria-expanded="false" aria-controls="flush-collapseFour">
+                                EN Student Center
+                              </button>
+                            </h2>
+                            <div id="flush-collapsefour2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+    
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+
+
+                <p class="fs-3"><strong>Showbiz and Entertainment</strong>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne3" aria-expanded="false" aria-controls="flush-collapseOne">
+                              ENsured Quality
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+    
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo3" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                SOSA: State of the Student Address
+                              </button>
+                            </h2>
+                            <div id="flush-collapseTwo3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+    
+                              </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree3" aria-expanded="false" aria-controls="flush-collapseThree">
+                                ENspacion
+                              </button>
+                            </h2>
+                            <div id="flush-collapseThree3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+    
+                              </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour3" aria-expanded="false" aria-controls="flush-collapseFour">
+                                EN Student Center
+                              </button>
+                            </h2>
+                            <div id="flush-collapsefour3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+    
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+
+
+                <p class="fs-3"><strong>Sports</strong>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne4" aria-expanded="false" aria-controls="flush-collapseOne">
+                              ENsured Quality
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+    
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo4" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                SOSA: State of the Student Address
+                              </button>
+                            </h2>
+                            <div id="flush-collapseTwo4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+    
+                              </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree4" aria-expanded="false" aria-controls="flush-collapseThree">
+                                ENspacion
+                              </button>
+                            </h2>
+                            <div id="flush-collapseThree4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+    
+                              </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour4" aria-expanded="false" aria-controls="flush-collapseFour">
+                                EN Student Center
+                              </button>
+                            </h2>
+                            <div id="flush-collapsefour4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+    
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+
+
+
+
+
+            </div>
+
+            <div class="col-xl-3 col-12 pt-xl-0 pt-3">
+                <p class="fs-2"><strong>Trending</strong></p>
+                <div class="p-2">
+                    <p class="fs-6">
+                        <a href="#">
+                            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit perspiciatis iste aperiam.</strong>
+                        </a>
+                    </p>
+                </div>
+                <div class="p-2">
+                    <p class="fs-6">
+                        <a href="#">
+                            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit perspiciatis iste aperiam.</strong>
+                        </a>
+                    </p>
+                </div>
+                <div class="p-2">
+                    <p class="fs-6">
+                        <a href="#">
+                            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit perspiciatis iste aperiam.</strong>
+                        </a>
+                    </p>
+                </div>
+                <div class="p-2">
+                    <p class="fs-6">
+                        <a href="#">
+                            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit perspiciatis iste aperiam.</strong>
+                        </a>
+                    </p>
+                </div>
+                <div class="p-2">
+                    <p class="fs-6">
+                        <a href="#">
+                            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit perspiciatis iste aperiam.</strong>
+                        </a>
+                    </p>
+                </div>
+                <div class="p-2">
+                    <p class="fs-6">
+                        <a href="#">
+                            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit perspiciatis iste aperiam.</strong>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="row py-3 mt-5" style="border-top:1px solid rgb(192, 190, 190); background-color: rgb(44, 44, 44);">
+        <div class="col-12 text-center">
+            <p class="fs-5" style="color: white;">&copy; By Allen Dave Macaspac and Mark Dechavez 2024-2025</p>
+        </div>
+    </div>
+    
+
+
+
+
+    <script src="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+</html>
