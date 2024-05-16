@@ -1,0 +1,530 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local News</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="0d52ee44-10f0-411f-b04b-bf5f036120aa";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').carousel();
+        });
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script></script>
+    <style>
+        .navbar{
+            padding: 8px;
+            padding-left: 20px;
+            z-index: 100;
+        }
+        .bgwhite{
+            background-color: white;
+        }
+        .breadcrumb{
+            position: fixed;
+            background-color: #f1f1f1;
+            width: 100%;
+            top: 92px;
+            border-bottom: 1px solid rgb(192, 190, 190);
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 90;
+            padding-left: 54px;
+        }
+        .firstcontainer{
+            padding-top: 100px;
+        }
+        .mainimg{
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            object-position: center;
+        }
+        body {
+            padding-top: 70px; 
+        }
+        .breaking-news {
+            background: #ff0000;
+            color: white;
+            padding: 0px 0;
+            margin-top: 62px;
+        }
+        .breaking-news marquee {
+            font-weight: bold;
+        }
+        .news-section {
+            padding: 30px 0;
+        }
+        .news-card {
+            margin-bottom: 20px;
+        }
+        .advertisement {
+            background: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .footer {
+            background: #FFFBF5;
+            color: black;
+            padding: 20px 0;
+            margin-top: 30px; 
+            text-decoration: none;
+        }
+        .list-widget {
+            list-style: none;
+            padding: 0;
+        }
+        .list-widget li {
+            background: #f8f9fa;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .time-widget,
+        .poll-widget,
+        .newsletter-widget {
+            margin-bottom: 30px;
+        }
+        .navbar-brand > img{
+            height: 60px;
+            padding: 8px;
+        }
+        .margin-nav{
+            margin-top: 10px;
+            margin-left: 12px;
+        }
+        .bgnav{
+            background-color: #FFFBF5;
+        }
+        .end{
+            text-align: end;
+        }
+    </style>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bgnav">
+        <div class="container-fluid margin-nav">
+          <a class="navbar-brand" href="mainpage.html">
+            <img src="Images/Logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse bgpurp text-end end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Local News
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">News Local</a></li>
+                  <li><a class="dropdown-item" href="#">Incidents</a></li>
+                  <li><a class="dropdown-item" href="#">Flash Reports</a></li>
+                  <li><a class="dropdown-item" href="#">Current News</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Weather
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Current Weather</a></li>
+                  <li><a class="dropdown-item" href="#">El Nino Effect and Updates</a></li>
+                  <li><a class="dropdown-item" href="#">Pag-Asa</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Showbiz
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Movies</a></li>
+                  <li><a class="dropdown-item" href="#">Music</a></li>
+                  <li><a class="dropdown-item" href="#">Social Media</a></li>
+                  <li><a class="dropdown-item" href="#">Coming Soon!</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sports
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Basketball</a></li>
+                  <li><a class="dropdown-item" href="#">Volleyball</a></li>
+                  <li><a class="dropdown-item" href="#">Olympics</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">References</a>
+              </li>          
+            </ul>
+          </div>          
+        </div>
+    </nav>
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb py-2">
+            <li class="breadcrumb-item active">Home</li>
+            <li class="breadcrumb-item active"><b>Local News</b></li>
+        </ol>
+    </nav>
+
+    <div class="breaking-news">
+        <div class="container">
+            <marquee behavior="scroll" direction="left">Breaking News: A total of 165 out of 167 Chinese nationals, employed by a Philippine Offshore Gaming Operator (POGO) situated in Bamban, Tarlac, were deported on Tuesday, May 14.</marquee>
+        </div>
+    </div>
+
+    <div id="featuredNewsCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Images/Local-Slider-1.png" class="d-block w-100" alt="Featured News 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Philippines deports 165 Chinese nationals from Bamban POGO hub</h5>
+                        <p>May 15, 2024 | 4:21pm</p>
+                    </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Images/Local-Slider-2.png" class="d-block w-100" alt="Featured News 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Twin girls, 5, die in Tondo fire</h5>
+                        <p>May 16, 2024 | 12:00am</p>
+                    </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Images/Local-Slider-3.png" class="d-block w-100" alt="Featured News 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Lower water allotment for Metro Manila starts today</h5>
+                        <p>May 16, 2024 | 12:00am</p>
+                    </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Images/Local-Slider-4.png" class="d-block w-100" alt="Featured News 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>LTFRB: Unconsolidated PUVs apprehended starting today</h5>
+                        <p>May 16, 2024 | 12:00am</p>
+                    </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#featuredNewsCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only"><b>Previous</b></span>
+        </a>
+        <a class="carousel-control-next" href="#featuredNewsCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only"><b>Next</b></span>
+        </a>
+    </div>
+
+    <section class="news-section">
+        <div class="container">
+            <h2 class="section-title">Latest Local News</h2>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card news-card">
+                            <img src="Images/Local-Pic-1.png" class="card-img-top" alt="Latest Local News 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Philippines deports 165 Chinese nationals from Bamban POGO hub</h5>
+                                <p class="card-text">A total of 165 out of 167 Chinese nationals, employed by a Philippine Offshore...</p>
+                                <a href="localnews1.html" class="btn btn-primary">Read more</a>
+                            </div>
+                        </div>
+                        <div class="card news-card">
+                            <img src="Images/Local-Pic-2.png" class="card-img-top" alt="Latest Local News 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Twin girls, 5, die in Tondo fire</h5>
+                                <p class="card-text">Twin five-year-old girls died in a fire that broke out in their house in Tondo,...</p>
+                                <a href="localnews2.html" class="btn btn-primary">Read more</a>
+                            </div>
+                        </div>
+                        <div class="card news-card">
+                            <img src="Images/Local-Pic-3.png" class="card-img-top" alt="Latest Local News 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Lower water allotment for Metro Manila starts today</h5>
+                                <p class="card-text">There will be no water supply interruptions despite the National Water Resources Board...</p>
+                                <a href="localnews3.html" class="btn btn-primary">Read more</a>
+                            </div>
+                        </div>
+                        <div class="card news-card">
+                            <img src="Images/Local-Pic-4.png" class="card-img-top" alt="Latest Local News 4">
+                            <div class="card-body">
+                                <h5 class="card-title">LTFRB: Unconsolidated PUVs apprehended starting today</h5>
+                                <p class="card-text">The Land Transportation Franchising and Regulatory Board (LTFRB) will start apprehending...</p>
+                                <a href="localnews4.html" class="btn btn-primary">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="list-widget">
+                            <h4>Top Stories</h4>
+                                <ul class="list-group">
+                                    <li class="list-group-item"><a href="#">Philippines deports 165 Chinese nationals from Bamban POGO hub</a></li>
+                                    <li class="list-group-item"><a href="#">Twin girls, 5, die in Tondo fire</a></li>
+                                    <li class="list-group-item"><a href="#">Lower water allotment for Metro Manila starts today</a></li>
+                                    <li class="list-group-item"><a href="#">LTFRB: Unconsolidated PUVs apprehended starting today</a></li>
+                                </ul>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                            Featured Video
+                            </div>
+                                <div class="card-body">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gCBKr4IWemk?si=DrMrXLuvAzsHzMAk" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advertisement mt-4">
+                            <h4>Advertisement</h4>
+                            <p>Ad space available</p>
+                        </div>
+                        <div class="advertisement">
+                            <h4>Advertisement</h4>
+                            <p>Ad space available</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Real Time Updates
+                                </button>
+                            </h2>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#sidebarAccordion">
+                                <div class="card-body">
+                                <p>Real-time updates content goes here.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="time-widget mt-5">
+                            <h4>Current Time</h4>
+                            <p id="current-time"></p>
+                        </div>
+                        <div class="poll-widget">
+                            <h4>Today's Poll</h4>
+                            <p>How do you feel about today's news?</p>
+                            <form id="poll-form">
+                                <input type="radio" id="option1" name="poll-option" value="option1">
+                                <label for="option1">Satisfied</label><br>
+                                <input type="radio" id="option2" name="poll-option" value="option2">
+                                <label for="option2">Neutral</label><br>
+                                <input type="radio" id="option3" name="poll-option" value="option3">
+                                <label for="option3">Angry</label><br>
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
+                        <div class="advertisement">
+                            <img src="https://via.placeholder.com/300x100" alt="">
+                        </div>
+                        <div class="advertisement">
+                            <h4>Advertisement</h4>
+                            <p>Ad space available</p>
+                        </div>
+                        <div class="accordion mt-4" id="sidebarAccordion">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Philippine Peso-Conversion Rate
+                                    </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#sidebarAccordion">
+                                <div class="card-body">
+                                <ul>
+                                    <li>US Dollar - ₱57.46</li>
+                                    <li>Euro - ₱62.54</li>
+                                    <li>British Pound - ₱72.90</li>
+                                    <li>Canadian Dollar - ₱42.24</li>
+                                    <li>Australian Dollar - ₱38.47</li>
+                                    <li>Japanese Yen - ₱0.37</li>
+                                    <li>New Zealand Dollar - ₱37.18</li>
+                                    <li>Singaporean Dollar - ₱42.72</li>
+                                    <li>Hongkong Dollar - ₱7.35</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Cryptocurrency Reports
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#sidebarAccordion">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>Bitcoin: $55,000</li>
+                                        <li>Ethereum: $4,000</li>
+                                        <li>Litecoin: $300</li>
+                                        <li>Ripple: $1.20</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                This day in history
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#sidebarAccordion">
+                                <div class="card-body">
+                                <p>On this day, May 16, in 1584, Santiago de Vera, the first president of the Real Audiencia, began his term as the sixth Governor-General of the Philippines after his appointment following the death of his predecessor Gonzalo Ronquillo de Peñalosa.
+
+                                    During his term, the wooden palisade that protected Manila from foreign incursions was rebuilt in 1590 using stone and named Fort Santiago (after St. James). It was completed in 1593 during the term of Gomez Perez Dasmariñas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="newsletter-widget mt-4">
+                            <h4>Subscribe to Our Newsletter</h4>
+                            <form id="newsletter-form">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h5>NAVIGATION</h5>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li>
+                  <a href="#">Local News</a>
+                  <ul>
+                    <li><a href="#">News Local</a></li>
+                    <li><a href="#">Incidents</a></li>
+                    <li><a href="#">Flash Reports</a></li>
+                    <li><a href="#">Current Events</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Weather</a>
+                  <ul>
+                    <li><a href="#">Current Weather</a></li>
+                    <li><a href="#">El Nino Effect</a></li>
+                    <li><a href="#">PAG-ASA</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Entertainment</a>
+                  <ul>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Social Media</a></li>
+                    <li><a href="#">Coming Soon!</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Sports</a>
+                  <ul>
+                    <li><a href="#">Basketball</a></li>
+                    <li><a href="#">Volleyball</a></li>
+                    <li><a href="#">Olympics</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">References</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h5>SOCIAL MEDIA</h5>
+              <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h5>ABOUT US</h5>
+              <ul>
+                <li><a href="#">The organization</a></li>
+                <li><a href="#">The workers</a></li>
+                <li><a href="#">The developers</a></li>
+                <li><a href="#">Our Philanthropy</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h5>MODAL</h5>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Launch modal
+              </button>
+      
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      Hi
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script src="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script>
+          $(function () {
+          $('[data-toggle="popover"]').popover()
+          })
+      </script>
+      <script>
+          // JavaScript to display current time
+          function updateTime() {
+              var currentTime = new Date();
+              var hours = currentTime.getHours();
+              var minutes = currentTime.getMinutes();
+              var seconds = currentTime.getSeconds();
+              var timeString = hours + ":" + minutes + ":" + seconds;
+              document.getElementById("current-time").innerHTML = timeString;
+          }
+          setInterval(updateTime, 1000);
+      
+          // JavaScript for handling poll submission (replace with actual logic)
+          document.getElementById("poll-form").addEventListener("submit", function(event) {
+              event.preventDefault();
+              var selectedOption = document.querySelector('input[name="poll-option"]:checked').value;
+              alert("You selected: " + selectedOption);
+          });
+      
+          // JavaScript for handling newsletter signup (replace with actual logic)
+          document.getElementById("newsletter-form").addEventListener("submit", function(event) {
+              event.preventDefault();
+              var email = document.getElementById("email").value;
+              alert("Subscribed with email: " + email);
+          });
+  
+          document.getElementById("poll-form").addEventListener("submit", function(event) {
+          event.preventDefault();
+          var selectedOption = document.querySelector('input[name="poll-option"]:checked').value;
+          
+      });
+      </script>
+  </body>
+  </html>
